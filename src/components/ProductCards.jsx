@@ -4,7 +4,7 @@ import { CartContext } from "../context/ChangeCart"
 const ProductCarts = ({id , image , title , basePrice , addToCart , increase , decrease}) => {
     const {cart} = useContext(CartContext)
     return (
-        <div key={id} >
+        <div>
             <div className="w-78 h-120 rounded-2xl bg-white p-3 hover:shadow-2xl">
                 <img className="w-75 h-75" src={image} alt="" />
                 <h1 className="text-black text-2xl pt-3 pb-2 truncate">{title}</h1>
